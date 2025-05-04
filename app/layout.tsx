@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import PortalProvider from "@/context/PortalContext";
+import { PageLoader } from "@/components/page-loader";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({
     
       >
         <PortalProvider>
+          <PageLoader/>
 
         {children}
         </PortalProvider>
