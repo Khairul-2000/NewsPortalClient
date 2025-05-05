@@ -27,12 +27,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-    
+
       >
         <PortalProvider>
-          <PageLoader/>
+          <PageLoader />
 
-        {children}
+          {children}
         </PortalProvider>
       </body>
     </html>
