@@ -30,7 +30,7 @@ export default function Home() {
   async function fetchNewsSummary(url: string) {
 
     setLoading(true);
-    const res = await fetch("https://newsportalsummarybackend.onrender.com/scraping", {
+    const res = await fetch("http://10.10.7.75:15000/scraping", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ url }),
